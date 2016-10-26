@@ -10,6 +10,7 @@ First, install the knuverse-cli:
 $ pip install knuverse-cli
 ```
 Then try it out!
+
 ![gif](https://i.imgur.com/VfNWWNo.gif)
 
 Current Features

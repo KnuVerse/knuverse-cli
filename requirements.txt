@@ -1,0 +1,3 @@
+knuverse
+colorama
+pyaudio

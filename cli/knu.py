@@ -94,11 +94,7 @@ def verification(api, client_name, mode=None):
     curses.noecho()
     curses.cbreak()
     try:
-        word_boundaries = []
-        animation_start = datetime.now()
         for frame in ver.get("animation"):
-            if frame.get("is_word_boundary"):
-                word_boundaries.append((datetime.now() - animation_start).total_seconds() * 1000)
             if frame.get("pinpad_display"):
                 _draw_pinpad(screen, frame.get("pinpad_display"))
             else:
@@ -119,7 +115,6 @@ def verification(api, client_name, mode=None):
     # Upload verification audio
     api.upload_verification_resource(
         ver_id,
-        word_boundaries,
         audio_file="/tmp/verification.wav",
     )
 

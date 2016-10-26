@@ -1,6 +1,6 @@
 # knuverse-sdk-python
 
-This project uses the Knuverse Python SDK(https://github.com/KnuVerse/knuverse-sdk-python) to demo AudioPIN and AudioPass verifications against the KnuVerse cloud server.
+This project uses the [Knuverse Python SDK](https://github.com/KnuVerse/knuverse-sdk-python) to demo AudioPIN and AudioPass verifications against the KnuVerse cloud server.
 
 Quick Start
 -----------

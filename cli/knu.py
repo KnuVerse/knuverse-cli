@@ -59,7 +59,7 @@ def _draw_word(screen, display):
 
     y, x = screen.getmaxyx()
     y //= 2
-    x //= 2
+    x = (x // 2) - len(display)
 
     screen.addstr(y, x, display)
     screen.refresh()

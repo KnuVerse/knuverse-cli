@@ -7,6 +7,7 @@ Quick Start
 First, install the knuverse-cli:
 
 ```sh
+$ sudo apt-get install portaudio19-dev
 $ pip install knuverse-cli
 ```
 Then try it out!

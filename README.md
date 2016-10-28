@@ -24,3 +24,7 @@ Coming Soon
 * Enrollment
 * Client creation
 * System Setting changes
+
+Notes
+-----
+A minimum python version of 2.7.9 is required to work with our version of TLS(>v1.1)

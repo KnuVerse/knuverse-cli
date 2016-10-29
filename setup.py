@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='knuverse-cli',
-    version='1.0.6',
+    version='1.0.7',
     description='Demo of the Knuverse SDK that lets you verify with AudioPIN and AudioPass',
     long_description=open('README.md').read(),
     url='https://github.com/KnuVerse/knuverse-cli',

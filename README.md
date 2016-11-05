@@ -20,7 +20,7 @@ $ pip install knuverse-cli
 
 Then try it out!
 
-![gif](https://i.imgur.com/VfNWWNo.gif)
+![gif](https://i.imgur.com/dxlTCF3.gif)
 
 ## Current Features
 

@@ -46,7 +46,7 @@ class Knuverse(object):
     def verify(self, args):
         """
         Verify a user with either AudioPIN or AudioPass
-        Usage: knuverse verify [options] <NAME>
+        Usage: knuverse verify <NAME> [options]
 
         Options:
           --audiopin Specifies to do an AudioPIN verification

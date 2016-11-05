@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='knuverse-cli',
-    version='1.0.7',
+    version='1.0.8',
     description='Demo of the Knuverse SDK that lets you verify with AudioPIN and AudioPass',
     long_description=open('README.md').read(),
     url='https://github.com/KnuVerse/knuverse-cli',
@@ -25,7 +25,7 @@ setup(
     ],
     keywords='api sdk knuverse cloud voice authentication audiopin audiopass demo',
 
-    install_requires=['knuverse==1.0.4', 'colorama', 'pyaudio'],
+    install_requires=['knuverse==1.0.7', 'colorama', 'pyaudio'],
     packages=find_packages(exclude=['examples']),
     entry_points={
         'console_scripts': [

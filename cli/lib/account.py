@@ -19,11 +19,10 @@ KNUVERSE_CONFIG_DIR = os.path.expanduser("~/.knuverse")
 def login():
     account_info = get_account_info()
     server = account_info.get("server_url")
-    user = account_info.get("user")
-    account_id = account_info.get("account_id")
+    apikey = account_info.get("apikey")
+    secret = account_info.get("secret")
     while True:
-        password = getpass.getpass("%s's password: " % user)
-        api = Knufactor(server, username=user, password=password, account=account_id)
+        api = Knufactor(apikey, secret, server=server)
         try:
             api.refresh_auth()
         except UnauthorizedException as e:
@@ -35,14 +34,14 @@ def login():
 
 def configure():
     print("Please fill in your Knuverse cloud information(or register: https://cloud.knuverse.com): ")
-    account_id = input("Account ID: ")
-    user = input("Username: ")
+    apikey = input("API Key: ")
+    secret = input("Secret: ")
 
     config = configparser.RawConfigParser()
     config.add_section("credentials")
     config.set("credentials", "server_url", "https://cloud.knuverse.com")
-    config.set("credentials", "user", user)
-    config.set("credentials", "account_id", account_id)
+    config.set("credentials", "apikey", apikey)
+    config.set("credentials", "secret", secret)
     if not os.path.exists(KNUVERSE_CONFIG_DIR):
         os.mkdir(KNUVERSE_CONFIG_DIR)
     with open(os.path.join(KNUVERSE_CONFIG_DIR, 'credentials'), 'w+') as configfile:
@@ -54,12 +53,12 @@ def get_account_info():
     if os.path.exists(os.path.join(KNUVERSE_CONFIG_DIR, 'credentials')):
         config = configparser.RawConfigParser()
         config.read(os.path.join(KNUVERSE_CONFIG_DIR, 'credentials'))
-        user = config.get("credentials", "user")
-        account_id = config.get("credentials", "account_id")
+        apikey = config.get("credentials", "apikey")
+        secret = config.get("credentials", "secret")
         server_url = config.get("credentials", "server_url")
         return {
-            "user": user,
-            "account_id": account_id,
+            "apikey": apikey,
+            "secret": secret,
             "server_url": server_url
         }
     else:

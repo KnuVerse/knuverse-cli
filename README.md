@@ -2,6 +2,8 @@
 
 This project uses the [Knuverse Python SDK](https://github.com/KnuVerse/knuverse-sdk-python) to demo AudioPIN and AudioPass verifications against the KnuVerse cloud server.
 
+Note: A minimum python version of 2.7.9 is required to work with our version of TLS(>v1.1)
+
 ## Quick Start
 
 First, install the knuverse-cli:
@@ -31,7 +33,3 @@ Then try it out!
 * Enrollment
 * Client creation
 * System Setting changes
-
-## Notes
-
-A minimum python version of 2.7.9 is required to work with our version of TLS(>v1.1)

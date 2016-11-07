@@ -4,7 +4,7 @@ This project uses the [Knuverse Python SDK](https://github.com/KnuVerse/knuverse
 
 ## Quick Start
 
-(A minimum python version of 2.7.9 is required to work with our version of TLS(>v1.1))
+Note: A minimum python version of 2.7.9 is required to work with our version of TLS(>v1.1)
 
 First, install the knuverse-cli:
 

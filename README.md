@@ -1,3 +1,5 @@
+[![PyPI](https://img.shields.io/pypi/v/knuverse-cli.svg)](https://pypi.python.org/pypi/knuverse-cli)
+
 # knuverse-cli
 
 This project uses the [Knuverse Python SDK](https://github.com/KnuVerse/knuverse-sdk-python) to demo AudioPIN and AudioPass verifications against the KnuVerse cloud server.
